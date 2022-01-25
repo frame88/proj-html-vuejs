@@ -8,16 +8,13 @@
                   </div>
                   <div class="nav-center">
                       <ul>
-                          <li><a href="">Home</a></li>
-                      </ul>
-                      <ul>
-                          <li><a href="">Landing <i class="fas fa-chevron-down"></i></a></li>
-                      </ul>
-                      <ul>
-                          <li><a href="">Page <i class="fas fa-chevron-down"></i></a></li>
-                      </ul>
-                      <ul>
-                          <li><a href="">Docs <i class="fas fa-chevron-down"></i></a></li>
+                          <li><a class="margin-li" href="">Home</a></li>                 
+                          <li><a href="">Landing</a></li>
+                          <li><a class="margin-li" href=""><i class="fas fa-chevron-down"></i></a></li>
+                          <li><a href="">Page </a></li>
+                          <li><a class="margin-li" href=""><i class="fas fa-chevron-down"></i></a></li>
+                          <li><a href="">Docs</a></li>
+                          <li><a class="margin-li" href=""><i class="fas fa-chevron-down"></i></a></li>
                       </ul>
                   </div>
                   <div class="nav-dx">
@@ -70,10 +67,23 @@ nav {
   align-items: center;
   width: 40%;
   justify-content: space-around;
-  a {
+  a, li {
     color: $grigio-2;
     text-transform: uppercase;
   }
+
+  ul {
+      display: flex;
+      .margin-li {
+          margin-right: 2em;
+          margin-left: 0.3em;
+      }
+
+  }
+    .fas, .fab, .far {
+        font-size: 80%;
+        align-self: center;
+    }
 }
 
 .nav-dx {
@@ -92,6 +102,11 @@ nav {
       padding: 0.5em;
       border-radius: 5px;
   }
+
+  .fas {
+      color: $grigio;
+  }
+
 
 }
 
