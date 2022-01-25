@@ -36,9 +36,10 @@ export default {
     background-color: $bianco-2;
 }
 
+
+
 .jumbo {
     padding-bottom: 3em;
-    border-bottom: 2px solid $grigio;
 }
 
 .jumbo-sx {
@@ -108,5 +109,10 @@ export default {
         width: 80%;
     }  
 }
+
+
+
+
+
 
 </style>

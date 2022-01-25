@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/partials/_variables.scss";
+@import "../assets/scss/partials/_common.scss";
 
 .container-max, .container {
     background-color: $bianco-2;
