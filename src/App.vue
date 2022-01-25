@@ -4,6 +4,7 @@
     <Jumbotron />
     <Loghi />
     <MainOne />
+    <MainTwo />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "./components/Header.vue";
 import Jumbotron from './components/Jumbotron.vue';
 import Loghi from "./components/Loghi.vue";
 import MainOne from './components/MainOne.vue';
+import MainTwo from './components/MainTwo.vue';
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     Jumbotron,
     Loghi,
     MainOne,
+    MainTwo,
   },
 };
 </script>
