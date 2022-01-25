@@ -67,7 +67,7 @@ export default {
             background-color: #007bff34;
             color: $blu;
             padding: 5px 10px;
-            border-radius: 15px;
+            border-radius: 15px;        
             
         }
     

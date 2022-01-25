@@ -1,12 +1,12 @@
 <template>
   <main>
-      <div class="container-max">
+      <div class="container-max MainOne-1">
           <div class="container title">
               <div class="features">
                 <h1>Key Features</h1>
               </div>
               <div class="subtitle">
-                <span>Start working with <span id="light">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</span>
+                <span>Start working with <span class="blu">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</span>
               </div>
           </div>
           <div class="container">
@@ -48,6 +48,46 @@
               </div>
           </div>
       </div>
+
+
+
+    <div class="container-max MainOne-2">
+        <div class="container MainOne-2">
+            <div class="quickstart">
+                <span class="blu">Quickstart</span>
+                <h1>Awesome isn't it? Let's dive in!</h1>
+                <span>Start working with <span class="blu">Landrick</span> that can provide everything you need to geenerate awareness, drive traffic, connect.</span>
+            </div>
+        </div>
+        <div class="container illustration">
+            <div class="forma">
+                <div class="npm">
+                    <span>npm</span>                    
+                </div>
+                <div class="skill">
+                    <span>nuget</span>                    
+                </div>
+                <div class="skill">
+                    <span>spm</span>                    
+                </div>
+                <div class="skill">
+                    <span>github</span>                    
+                </div>
+            </div>
+            <div class="sub-forma">
+                <span><span class="green">$</span> npm install <span class="green">-g</span> claps.js</span>
+            </div>
+        </div>
+        <div class="container-max-subforma">
+            <div class="container-sub-forma">
+                <i class="far fa-check-circle green"></i>
+                <span>  Organize your data</span>
+                <i class="far fa-check-circle green"></i>
+                <span>  Work with any team</span>
+
+            </div>
+        </div>
+    </div>
   </main>
 </template>
 
@@ -59,8 +99,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/partials/_variables.scss";
-    .container-max {
-        height: 80vh;
+    .MainOne-1 {
+        height: 60vh;
         background-color: $bianco-1;
     }
 
@@ -73,17 +113,23 @@ export default {
         }
     }
 
-    .subtitle span {
-        color: $grigio;
+    .subtitle {
+        span {
+            color: $grigio;
+        }
+
+        .blu {
+            color: $blu;
+        }
     }
 
     .box-skill {
         width: 25%;
         height: 27vh;
-        border: 2px solid $grigio;
+        border: 2px solid $bianco-2;
         padding: 1.5em;
         border-radius: 5px;
-        margin: 1em;
+        margin: 0.5em;
 
         i, h1 {
             margin-bottom: 10px;
@@ -118,6 +164,94 @@ export default {
         }
     }    
 
+    .MainOne-2 {
+        justify-content: center;
+    }
+
+    .quickstart {
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            margin: 1em;
+        }
+    }
+
+    .quickstart {
+        span {
+        align-self: center;
+        color: $grigio;
+        }
+
+        .blu {
+            color: $blu;
+        }
+    }   
+
+    .illustration {
+        width: 40%;
+        height: 15vh;
+        background-color: $grigio-2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 4em;
+        margin-bottom: 1em; //da cancellare !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        border-radius: 10px;
+    }
+        
+    .forma {
+        align-self: center;
+        width: 90%;
+        display: flex;
+        justify-content:center;
+        border: 2px solid $grigio;
+        border-radius: 7px;
+        .skill {
+            width: 25%;
+            text-align: center;
+            background-color: $grigio;
+
+            }
+            span {
+                color: white;
+                font-size: 140%;
+            }
+        }
+
+        .npm {
+            background-color: $grigio-2;
+            width: 25%;
+            text-align: center;
+            span {
+                color: white;
+                font-size: 140%;
+            }
+    }  
+    .sub-forma {
+        width: 90%;
+        margin-top: 1em;
+        align-self: center;       
+    }
+    
+    .green {
+        color: $verde-1;
+    }
+
+    .container-max-subforma {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .container-sub-forma {
+        width: 40%;
+        span {
+            margin-right: 2em;
+        }
+    }
 
 
 </style>
