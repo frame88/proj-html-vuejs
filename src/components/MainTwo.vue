@@ -112,13 +112,15 @@ export default {
 
 .container-bottom {
     width: 50%;
-    margin-top: 3em;
+    margin-top: 4em;
+    margin-bottom: 4em;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     .subtitle {
         width: 60%;
+        margin-top: 1.5em;
     }
 }
 </style>
