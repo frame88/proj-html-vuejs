@@ -44,7 +44,7 @@ export default {
           infofour: "1 Domain Free",
           infofive: "Enanched Security",
         }
-      ]
+      ],
     }
   }
 };
