@@ -69,6 +69,7 @@
 
               <div class="foot-dx">
                   <h1>Newsletter</h1>
+
               </div>
           </div>
       </div>
@@ -84,9 +85,12 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/partials/_variables.scss";
 
+.container-max {
+    background-color: $notte;
+    padding-bottom: 30vh;
+}
+
 .container {
-    justify-content: center;
-    margin-bottom: 60vh;
     h1 {
         color: $bianco-1;
     }
@@ -98,17 +102,39 @@ export default {
 }
 
 .foot-sx {
-    background-color: red;
     .logo {
         width: 50%;
+        margin-bottom: 1em;
         img {
             width: 70%;
         }
     }
+
+    .sub {
+        margin-bottom: 1em;
+    }
+
+    .social {
+        i {
+            color: $grigio;
+            padding: 0.7em;
+            border: 1px solid $grigio;
+            border-radius: 10px;
+            margin-right: 2px;
+        }
+    }
 }
 
-.foot-center-one {
-    background-color: green;
+.foot-center-one, .foot-center-two {
+    li {
+        a {
+            color: $grigio;
+        }
+    }
+}
+
+
+.foot-dx {
 }
 
 </style>
