@@ -31,6 +31,22 @@ export default {
     MainTre,
     Footer,
   },
+  props: {
+    arrayDati: Array,
+  },
+  data() {
+    return {
+      mainskill: [
+        {
+          infone: "Full access",
+          infotwo: "Enanched Security",
+          infotre: "Source Files",
+          infofour: "1 Domain Free",
+          infofive: "Enanched Security",
+        }
+      ]
+    }
+  }
 };
 </script>
 

@@ -7,8 +7,8 @@
                    <span class="type light">Basic</span>
                 </div>
                 <div class="title"><h1>$9.00</h1></div>
-                <div class="sub"><span>Per Month</span></div>
-                <div class="sub-2"><span>All the basic for business that are just getting started</span></div>
+                <div class="sub"><span>{{period}}</span></div>
+                <div class="sub-2"><span>{{sub}}</span></div>
                 <div class="box-maintwo">
                     <div class="option">
                         <i class="far fa-check-circle light"></i>
@@ -35,7 +35,7 @@
                     <a class="button" href="">Buy Now</a>
                 </div>
                 <div class="sub">
-                    <span class="grigio" >*No credit card required</span>
+                    <span class="grigio" >{{card}}</span>
                 </div>
               </div>
 
@@ -44,8 +44,8 @@
                    <span class="type light">Business</span>
                 </div>
                 <div class="title"><h1>$39.00</h1></div>
-                <div class="sub"><span>Per Month</span></div>
-                <div class="sub-2"><span>All the basic for business that are just getting started</span></div>
+                <div class="sub"><span>{{period}}</span></div>
+                <div class="sub-2"><span>{{sub}}</span></div>
                 <div class="box-maintwo">
                     <div class="option">
                         <i class="far fa-check-circle light"></i>
@@ -72,7 +72,7 @@
                     <a class="button" href="">Buy Now</a>
                 </div>
                 <div class="sub">
-                    <span class="grigio" >*No credit card required</span>
+                    <span class="grigio" >{{card}}</span>
                 </div>
               </div>
 
@@ -81,8 +81,8 @@
                    <span class="type light">Enterprise</span>
                 </div>
                 <div class="title"><h1>$79.00</h1></div>
-                <div class="sub"><span>Per Month</span></div>
-                <div class="sub-2"><span>All the basic for business that are just getting started</span></div>
+                <div class="sub"><span>{{period}}</span></div>
+                <div class="sub-2"><span>{{sub}}</span></div>
                 <div class="box-maintwo">
                     <div class="option">
                         <i class="far fa-check-circle light"></i>
@@ -109,7 +109,7 @@
                     <a class="button" href="">Buy Now</a>
                 </div>
                 <div class="sub">
-                    <span class="grigio" >*No credit card required</span>
+                    <span class="grigio" >{{card}}</span>
                 </div>
               </div>
           </div>
@@ -132,9 +132,23 @@
 </template>
 
 <script>
-export default {
 
-}
+
+export default {
+    name: 'MainTre',
+    components: {
+
+    },
+    props: {
+        Mainskill:Array,
+    },
+    data() {
+        return{
+            period: "Per month",
+            sub: "All the basic for business that are just getting started",
+            card: "*No credit card required",
+    }
+}}
 </script>
 
 <style lang="scss" scoped>
