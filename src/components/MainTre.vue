@@ -147,7 +147,6 @@ export default {
 .container {
     justify-content: center;
     align-items: center;
-    height: 45vh;
 }
 
 // .centrale {                                                  HOVER !!!!!!!!!!!!!!!!!!!!!!!!!
@@ -231,6 +230,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5em;
 
     .title, .sub {
         margin-bottom: 1em;
@@ -243,7 +243,6 @@ export default {
 
     .barra {
         width: 60%;
-        margin-bottom: 30vh;
         height: 30px;
         border-radius: 30px;
         border: 2px solid $grigio;

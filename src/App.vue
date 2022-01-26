@@ -6,6 +6,8 @@
     <MainOne />
     <MainTwo />
     <MainTre />
+    <Footer />
+
   </div>
 </template>
 
@@ -16,6 +18,7 @@ import Loghi from "./components/Loghi.vue";
 import MainOne from './components/MainOne.vue';
 import MainTwo from './components/MainTwo.vue';
 import MainTre from "./components/MainTre.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -26,6 +29,7 @@ export default {
     MainOne,
     MainTwo,
     MainTre,
+    Footer,
   },
 };
 </script>
