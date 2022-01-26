@@ -83,10 +83,10 @@
                 <div class="title"><h1>$79.00</h1></div>
                 <div class="sub"><span>{{period}}</span></div>
                 <div class="sub-2"><span>{{sub}}</span></div>
-                <div class="box-maintwo" v-for="(skill, index) in Mainskill" :key="index">
+                <div class="box-maintwo" >
                     <div class="option">
                         <i class="far fa-check-circle light"></i>
-                        <span> Full Access</span>
+                        <span> Full access</span>
                     </div>
                     <div class="option">
                         <i class="far fa-check-circle light"></i>
