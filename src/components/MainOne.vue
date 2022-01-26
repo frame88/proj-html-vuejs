@@ -13,7 +13,7 @@
 
               <div class="box-skill left">
                   <i class="fas fa-layer-group fondo"></i>
-                  <h1>Modular</h1>
+                  <span class="ex-h1">Modular</span>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
                     <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
@@ -22,7 +22,7 @@
 
               <div class="box-skill ">
                     <i class="fas fa-tv fondo"></i>
-                  <h1>Responsive</h1>
+                  <span class="ex-h1">Responsive</span>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
                     <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
@@ -31,7 +31,7 @@
 
               <div class="box-skill  ">
                   <i class="fab fa-codepen fondo"></i>
-                  <h1>Customizable</h1>
+                  <span class="ex-h1">Customizable</span>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
                     <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
@@ -40,7 +40,7 @@
               
               <div class="box-skill right">
                   <i class="fas fa-expand-arrows-alt fondo"></i>
-                  <h1>Scalable</h1>
+                  <span class="ex-h1">Scalable</span>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
                     <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
@@ -145,8 +145,15 @@ export default {
             margin-bottom: 5em;
         }
 
-        i, h1 {
+        i {
             margin-bottom: 10px;
+        }
+
+        .ex-h1 {
+            margin-bottom: 10px;
+            font-size: 150%;
+            display: block;
+            font-weight: bold;
         }
 
         .link-read {
@@ -177,7 +184,6 @@ export default {
         .button {
         width: 120px;
         margin-top: 1em;
-        padding: 0.5em;
         border-radius: 5px;
         text-align: center;
         color: $blu;
@@ -188,6 +194,7 @@ export default {
 
         &:hover,
         &:active {
+            padding: 0.5em;
             background-color: $blu;
             color: $bianco-1;
         }

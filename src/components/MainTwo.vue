@@ -99,6 +99,10 @@ export default {
             font-size: 60%;
         }
 
+        &:hover,
+        &:active {
+            background-color: $notte;
+        }
     }
 
 }

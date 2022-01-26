@@ -8,12 +8,12 @@
                   </div>
                   <div class="nav-center">
                       <ul>
-                          <li><a class="margin-li" href="">Home</a></li>                 
-                          <li><a href="">Landing</a></li>
+                          <li><a class="margin-li" href="">{{uno}}</a></li>                 
+                          <li><a href="">{{due}}</a></li>
                           <li><a class="margin-li" href=""><i class="fas fa-chevron-down"></i></a></li>
-                          <li><a href="">Page </a></li>
+                          <li><a href="">{{tre}} </a></li>
                           <li><a class="margin-li" href=""><i class="fas fa-chevron-down"></i></a></li>
-                          <li><a href="">Docs</a></li>
+                          <li><a href="">{{quattro}}</a></li>
                           <li><a class="margin-li" href=""><i class="fas fa-chevron-down"></i></a></li>
                       </ul>
                   </div>
@@ -34,6 +34,12 @@
 export default {
     name: 'Header',
     data() {
+        return{
+            uno: "Home",
+            due: "Landing",
+            tre: "Page",
+            quattro: "Docs",
+    }
 
     }     
 }

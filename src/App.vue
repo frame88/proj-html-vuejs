@@ -35,5 +35,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/scss/style.scss"
+@import "./assets/scss/style.scss";
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Dongle:wght@700&display=swap');
 </style>
