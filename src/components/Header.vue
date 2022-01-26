@@ -71,6 +71,10 @@ nav {
   a, li {
     color: $grigio-2;
     text-transform: uppercase;
+    &:hover,
+    &:active {
+        color: $blu;
+    }
   }
 
   ul {
@@ -78,6 +82,7 @@ nav {
       .margin-li {
           margin-right: 2em;
           margin-left: 0.3em;
+          
       }
 
   }
@@ -102,6 +107,11 @@ nav {
       color: $blu;
       padding: 0.5em;
       border-radius: 5px;
+      &:hover,
+      &:active {
+        background-color: $blu;
+        color: $bianco-1;
+      }
   }
 
   .fas {

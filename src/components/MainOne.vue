@@ -9,43 +9,44 @@
                 <span>Start working with <span class="blu">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</span>
               </div>
           </div>
-          <div class="container">
+          <div class="container boxe">
+
               <div class="box-skill left">
-                  <i class="fas fa-layer-group"></i>
+                  <i class="fas fa-layer-group fondo"></i>
                   <h1>Modular</h1>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
-                      <a href="">Read More</a>
-                      <i class="fas fa-chevron-right"></i>
+                    <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
                   </div>
               </div>
+
               <div class="box-skill ">
-                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-tv fondo"></i>
                   <h1>Responsive</h1>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
-                      <a href="">Read More</a>
-                      <i class="fas fa-chevron-right"></i>
+                    <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
                   </div>
               </div>
-              <div class="box-skill ">
-                  <i class="fab fa-codepen"></i>
+
+              <div class="box-skill  ">
+                  <i class="fab fa-codepen fondo"></i>
                   <h1>Customizable</h1>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
-                      <a href="">Read More</a>
-                      <i class="fas fa-chevron-right"></i>
+                    <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
                   </div>
               </div>
+              
               <div class="box-skill right">
-                  <i class="fas fa-expand-arrows-alt"></i>
+                  <i class="fas fa-expand-arrows-alt fondo"></i>
                   <h1>Scalable</h1>
                   <span>Composed in a pseudo-Latin language which more or less corresponds.</span>
                   <div class="link-read">
-                      <a href="">Read More</a>
-                      <i class="fas fa-chevron-right"></i>
+                    <a class="button" href="">Read more <i class="fas fa-arrow-right"></i></a>
                   </div>
               </div>
+
           </div>
       </div>
 
@@ -123,6 +124,11 @@ export default {
         }
     }
 
+    .boxe {
+        height: 40vh;
+        align-items: flex-end;
+    }
+
     .box-skill {
         width: 25%;
         height: 27vh;
@@ -130,6 +136,14 @@ export default {
         padding: 1.5em;
         border-radius: 5px;
         margin: 0.5em;
+        margin-bottom: 3em;
+
+        // position: relative;
+
+        &:hover,
+        &:active {
+            margin-bottom: 5em;
+        }
 
         i, h1 {
             margin-bottom: 10px;
@@ -139,7 +153,7 @@ export default {
             margin-top: 10px;
         }
 
-        i {
+        .fondo {
             background-color: $azure;
             color: $blu;
             padding: 0.5em;
@@ -148,21 +162,63 @@ export default {
         }
     }
 
+    // .box-skill:after {
+    //     position: absolute;
+    //     font-family: 'FontAwesome';
+    //     top: 0;
+    //     left: 10px;
+    //     content: "\f005"; //non funziona ??????????? chiedere
+    // }
+
     .left {
         margin-left: 0;
     }
 
+        .button {
+        width: 120px;
+        margin-top: 1em;
+        padding: 0.5em;
+        border-radius: 5px;
+        text-align: center;
+        color: $blu;
 
-    .link-read {
         i {
-            background-color: $bianco-1;
-            font-size: 80%;
+            font-size: 60%;
         }
 
-        a {
-            color: $blu;
+        &:hover,
+        &:active {
+            background-color: $blu;
+            color: $bianco-1;
         }
-    }    
+
+    }
+
+
+
+
+    // .link-read {
+    //     &:hover,
+    //     &:active {
+    //         }
+
+
+    //     i {
+    //         background-color: $bianco-1;
+    //         font-size: 80%;
+    //     }
+
+    //     a {
+    //         padding: 0.3em;
+    //         color: $blu;
+    //         &:hover,
+    //         &:active {
+    //             color: $bianco-1;
+    //             background-color: blue;
+    //             border-radius: 10px;
+    //         }
+    //     }
+    // }    
 
     .MainOne-2 {
         justify-content: center;

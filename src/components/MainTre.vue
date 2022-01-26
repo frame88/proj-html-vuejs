@@ -147,16 +147,23 @@ export default {
 .container {
     justify-content: center;
     align-items: center;
+    height: 45vh;
 }
 
-// .centrale {                                                  HOVER !!!!!!!!!!!!!!!!!!!!!!!!!
-//     box-shadow: 1px 1px 5px 5px $grigio;
-//     height: 100%;
-// }
 
-// .laterale {
-//     height: 98%;
-// }
+.box {
+    height: 95%;
+}
+
+.box {
+    &:hover,
+    &:active {
+        box-shadow: 1px 1px 5px 5px $grigio;
+        height: 100%;
+        border-bottom: 5px solid $blu;
+    }                                                 
+}
+
 
 .box {
     width: 25%;
@@ -212,6 +219,10 @@ export default {
     text-align: center;
     color: $bianco-2;
     background-color: $blu;
+    &:hover,
+    &:active {
+        background-color: $notte;
+    }
     }
 
     .centrale {
